@@ -1,0 +1,36 @@
+{
+  "newUser": {
+    "email": "Orlando.Beier@yahoo.com",
+    "password": "KcoZKr4Ifru2Cpg",
+    "username": "Eldon.Okuneva87",
+    "day": 3,
+    "month": "March",
+    "year": "1995",
+    "firstname": "Kaley",
+    "lastname": "Quitzon",
+    "company": "Company Name",
+    "address": "943 Rolfson Village",
+    "address2": "91728 Orn Fork",
+    "country": "United States",
+    "state": "Wisconsin",
+    "city": "Tomasaview",
+    "zipcode": "51886",
+    "mobileNumber": "00999877765",
+    "creditCard": {
+      "name": "Carla Huel",
+      "number": "2277-8094-7485-8608",
+      "cvc": "227",
+      "expiryMonth": "12",
+      "expiryYear": "2035"
+    }
+  },
+  "invalidUser": {
+    "email": "invalidMail@abc.com",
+    "password": "r8eQpwQ5d3g1oGg"
+  },
+  "duplicatedUser": {
+    "email": "Orlando.Beier@yahoo.com",
+    "password": "KcoZKr4Ifru2Cpg",
+    "username": "Eldon.Okuneva87"
+  }
+}

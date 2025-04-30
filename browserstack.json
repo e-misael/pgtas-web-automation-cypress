@@ -1,0 +1,43 @@
+{
+    "auth": {
+        "username": "<<placeTheBrowserStackUsernameHere>>",
+        "access_key": "<<placeTheAccessKey>>"
+    },
+    "browsers": [
+        {
+            "browser": "chrome",
+            "os": "Windows 10",
+            "versions": [
+                "latest-1"
+            ]
+        },
+        {
+            "browser": "edge",
+            "os": "Windows 10",
+            "versions": [
+                "latest-1"
+            ]
+        }
+    ],
+    "run_settings": {
+        "pre_run": "node ./cypress/support/data/generateTestData.js",
+        "cypress_config_file": "./cypress.config.js",
+        "project_name": "PGTAS_TrabalhoFinal",
+        "build_name": "run",
+        "exclude": [],
+        "parallels": "1",
+        "npm_dependencies": {
+            "cypress-mochawesome-reporter": "^3.8.2",
+            "@faker-js/faker": "9.7.0"
+          },          
+        "package_config_options": {},
+        "headless": true
+      },
+    "connection_settings": {
+        "local": false,
+        "local_identifier": null,
+        "local_mode": null,
+        "local_config_file": null
+    },
+    "disable_usage_reporting": false
+}
