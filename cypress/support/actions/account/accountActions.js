@@ -16,7 +16,7 @@ Cypress.Commands.add('fillInitialSignupFieldsAndSubmit', (username, email) => {
 Cypress.Commands.add('fillComplementaryFieldsForSignUp', (user) => {
     cy.contains('ENTER ACCOUNT INFORMATION', { matchCase: false }).should('be.visible');
     cy.get('#id_gender1').check();
-    cy.get('[data-qa="name"]').should('have.value', user.username+'_expectingFailure');
+    cy.get('[data-qa="name"]').should('have.value', user.username);
     cy.get('[data-qa="email"]').should('have.value', user.email);
     cy.get('[data-qa="password"]').type(user.password);
     cy.get('[data-qa="days"]').select(user.day);
