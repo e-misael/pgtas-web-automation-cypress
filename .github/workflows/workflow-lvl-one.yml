@@ -1,0 +1,18 @@
+name: 'PGATS - Continuous Integration - Level 1'
+on:
+  workflow_dispatch: 
+jobs:
+  # job detailing
+  tests:
+    # target machine
+    runs-on: ['ubuntu-latest']
+    # action step-by-step
+    steps: 
+      # fetches the target repository
+      - uses: actions/checkout@v4
+      # installing dependencies by command line
+      - name: Dependencies install
+        run: npm install
+      # running e2e tests by command line
+      - name: Running e2e tests
+        run: npm run test
